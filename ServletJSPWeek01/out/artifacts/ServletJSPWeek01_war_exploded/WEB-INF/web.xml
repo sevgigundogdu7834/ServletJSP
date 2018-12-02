@@ -11,6 +11,16 @@
         <servlet-name> firstServlet</servlet-name>
         <servlet-class>_03_.MyFirstServlet</servlet-class>
 
+
+    </servlet>
+
+    <servlet>
+
+        <!--suppress ServletWithoutMappingInspection -->
+        <servlet-name> SecondServlet</servlet-name>
+        <servlet-class>_05_Mixed.SecondServlet</servlet-class>
+
+
     </servlet>
 
     <servlet-mapping>
@@ -19,6 +29,19 @@
 
         <servlet-name>firstServlet</servlet-name>
         <url-pattern>/firstServlet</url-pattern>
+        <url-pattern>/firstServlet2</url-pattern>
+
+        <!-- url patternde / koymak zorundayız..-->
+
+    </servlet-mapping>
+
+    <servlet-mapping>
+
+        <!--DİKKAT Servlet deki servlet name ile aynı olmak zorundadır.-->
+
+        <servlet-name>SecondServlet</servlet-name>
+        <url-pattern>/SecondServlet</url-pattern>
+
 
         <!-- url patternde / koymak zorundayız..-->
 
